@@ -163,8 +163,8 @@ get_formula_info_for_estimated_effect_within = function() {
   return(fm_info)
 }
 
-t17_ra = function(dt_sample, save_folder_basis) {
-  savefolder = file.path(save_folder_basis, "t17_ra")
+main = function(save_folder_basis) {
+  savefolder = file.path(save_folder_basis, "t17")
   df_use = get_data_seup()
   ############################
   # Method1: Calc From Estimated Coef
@@ -264,7 +264,7 @@ t17_ra = function(dt_sample, save_folder_basis) {
 }
 
 
-check_rdd_plot = function(save_folder_basis) {
+main2 = function(save_folder_basis) {
   get_plot = function(
     lmobject, dfx.average, absolute_age_min, absolute_age_max, absolute_age_cutoff0,
     xlab = NULL, ylab = NULL

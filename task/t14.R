@@ -188,7 +188,7 @@ main = function(save_folder_basis) {
       summary_glance %>% dplyr::filter(!(is_adopt == TRUE))
     )
   # save
-  savefolder = file.path(save_folder_basis, "t14_ra")
+  savefolder = file.path(save_folder_basis, "t14")
   dir.create(savefolder, recursive = TRUE)
   write.csv(x = summary_tidy, file = file.path(savefolder, "summary_tidy.csv"))
   write.csv(x = summary_glance, file = file.path(savefolder, "summary_glance.csv"))

@@ -21,8 +21,8 @@ get_formula_info_t0 = function(...) {
 }
 
 
-main = function(save_folder_basis) {
-  dt_sample = download_saitama()
+main = function(save_folder_basis, flag_dryrun=FALSE) {
+  dt_sample = download_saitama(flag_dryrun = flag_dryrun)
   af = AnalysisFunction$new(
     func_get_tibble = get_tibble_by_grade,
     func_get_formula_info = get_formula_info_t0,
@@ -32,7 +32,7 @@ main = function(save_folder_basis) {
   analysis = Analysis$new(dfx = dt_sample)
   research_execute(analysis = analysis)
   # save
-  savefolder = file.path(save_folder_basis, "t0_ra")
+  savefolder = file.path(save_folder_basis, "t0")
   dir.create(savefolder, recursive = TRUE)
   write.csv(x = analysis$summary_tidy, file = file.path(savefolder, "summary_tidy.csv"))
   write.csv(x = analysis$summary_glance, file = file.path(savefolder, "summary_glance.csv"))

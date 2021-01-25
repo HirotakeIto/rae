@@ -71,13 +71,16 @@ AnalysisEnvironmentT25 <- R6::R6Class(
 )
 
 main = function(save_folder_basis) {
-  dt_sample1 = readr::read_csv(path_enter) %>%
+  dt_sample1 = data.table::fread(path_enter) %>%
+    tibble::as_tibble() %>%
     dplyr::rename(shingaku = final_hensachi) %>%
     dplyr::select(mst_id, year, shingaku, cramschool)
-  dt_sample2 = readr::read_csv(path_enter) %>%
+  dt_sample2 = data.table::fread(path_enter) %>%
+    tibble::as_tibble() %>%
     dplyr::rename(zyuken = final_hensachi) %>%
     dplyr::select(mst_id, zyuken)
-  dt_sample3 = readr::read_csv(path_toda) %>%
+  dt_sample3 = data.table::fread(path_toda) %>%
+    tibble::as_tibble() %>%
     dplyr::select(mst_id, year, grade, school_id, relative_age, sex, book, cram, zkokugo_level, zmath_level, zeng_level, zstrategy, zselfefficacy)
   dt_sample = dt_sample1 %>%
     dplyr::left_join(dt_sample2, by = "mst_id") %>%

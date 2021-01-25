@@ -45,7 +45,7 @@ main = function(save_folder_basis) {
   research_execute = af$get_analysis_method()
   analysis = Analysis$new(dfx = dt_sample)
   research_execute(analysis = analysis)
-  savefolder = file.path(save_folder_basis, "t6_ra")
+  savefolder = file.path(save_folder_basis, "t6")
   dir.create(savefolder, recursive = TRUE)
   write.csv(x = analysis$summary_tidy, file = file.path(savefolder, "summary_tidy.csv"))
   write.csv(x = analysis$summary_glance, file = file.path(savefolder, "summary_glance.csv"))

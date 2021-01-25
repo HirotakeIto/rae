@@ -244,7 +244,7 @@ main = function(save_folder_basis) {
     dplyr::bind_rows(
       summary_glance %>% dplyr::filter(!(is_adopt == TRUE))
     )
-  savefolder = file.path(save_folder_basis, "t3_ra")
+  savefolder = file.path(save_folder_basis, "t3")
   dir.create(savefolder, recursive = TRUE)
   write.csv(x = summary_tidy, file = file.path(savefolder, "summary_tidy.csv"))
   write.csv(x = summary_glance, file = file.path(savefolder, "summary_glance.csv"))

@@ -111,7 +111,7 @@ main = function(save_folder_basis) {
   # 20200526: 算数と国語は2015年のG6で、英語はG8で、非認知能力についてはG6（最初に出てきた年）で正規化し、Table 5, 6, 7と同じものを作る。結果はSlack上で見せて欲しい（論文に入れるかは要検討）
   standalize_by_specic_year_grade = function(dfx, target, val_year, val_grade) {
     mean_sd = dfx %>%
-      plyr::filter(!!sym(year_col) == val_year, !!sym(grade_col) == val_grade) %>%
+      dplyr::filter(!!sym(year_col) == val_year, !!sym(grade_col) == val_grade) %>%
       {list(mean = mean(.[[target]], na.rm = TRUE), sd = sd(.[[target]], na.rm = TRUE))}
     print(paste(target, mean_sd$meam, mean_sd$sd))
     (dfx[[target]] - mean_sd$mean) / mean_sd$sd
@@ -202,7 +202,7 @@ main = function(save_folder_basis) {
       summary_glance %>% dplyr::filter(!(is_adopt == TRUE))
     )
   # save
-  savefolder = file.path(save_folder_basis, "t8_ra")
+  savefolder = file.path(save_folder_basis, "t8")
   dir.create(savefolder, recursive = TRUE)
   write.csv(x = summary_tidy, file = file.path(savefolder, "summary_tidy.csv"))
   write.csv(x = summary_glance, file = file.path(savefolder, "summary_glance.csv"))

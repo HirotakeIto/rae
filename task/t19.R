@@ -68,7 +68,7 @@ AnalysisEnvironmentT19 <- R6::R6Class(
 )
 
 
-t19_ra = function(save_folder_basis) {
+main = function(save_folder_basis) {
   dt_sample = download_toda()
   targets = c(
     c("zgakuryoku", "zkokugo_level", "zmath_level", "zeng_level", "zstrategy"),
@@ -108,7 +108,7 @@ t19_ra = function(save_folder_basis) {
     dplyr::bind_rows(
       summary_glance %>% dplyr::filter(!(is_adopt == TRUE))
     )
-  savefolder = file.path(save_folder_basis, "t19_ra")
+  savefolder = file.path(save_folder_basis, "t19")
   dir.create(savefolder, recursive = TRUE)
   write.csv(x = summary_tidy, file = file.path(savefolder, "summary_tidy.csv"))
   write.csv(x = summary_glance, file = file.path(savefolder, "summary_glance.csv"))

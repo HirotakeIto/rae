@@ -174,7 +174,7 @@ AnalysisEnvironmentT22 = R6::R6Class(
   )
 )
 
-main = function(dt_sample, save_folder_basis) {
+main = function(save_folder_basis) {
   # sample
   # dfx = readr::read_csv("./notebooks/Yamaguchi/RAE/data/dataset1.csv", guess_max = 2000000)
   # dt_sample = data_download$usedata_extract(data_download$setup_data(dfx), flag_dryrun = 1)
@@ -240,7 +240,7 @@ main = function(dt_sample, save_folder_basis) {
       ~ .x$result$boot_item %>% dplyr::mutate(name = .x$name())
       ) %>%
     purrr::reduce(dplyr::bind_rows)
-  savefolder = file.path(save_folder_basis, "t22_ra")
+  savefolder = file.path(save_folder_basis, "t22")
   dir.create(savefolder, recursive = TRUE)
   write.csv(x = summary_tidy, file = file.path(savefolder, "summary_tidy.csv"))
   write.csv(x = summary_glance, file = file.path(savefolder, "summary_glance.csv"))
