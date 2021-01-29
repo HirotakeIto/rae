@@ -1,0 +1,85 @@
+"","tau","AIC","BIC","df.residual","obs","delta_est","delta_se","fm_use","name","fm_delta"
+"1",0.1,1643291.60907446,1643325.22454658,543156,543159,0.27601217683018,0.00667262160728254,"zgakuryoku ~ relative_age + I(relative_age^2)","rq_zgakuryoku_prime_0.1",NA
+"2",0.5,1429150.56741771,1429184.18288983,543156,543159,0.281455102459191,0.00417615833132183,"zgakuryoku ~ relative_age + I(relative_age^2)","rq_zgakuryoku_prime_0.5",NA
+"3",0.9,1774542.06369095,1774575.67916307,543156,543159,0.329943132448864,0.00618321114664564,"zgakuryoku ~ relative_age + I(relative_age^2)","rq_zgakuryoku_prime_0.9",NA
+"4",0.1,1767769.77455548,1767803.39025404,543197,543200,0.283884849793876,0.00748823877265358,"zkokugo_level ~ relative_age + I(relative_age^2)","rq_zkokugo_level_prime_0.1",NA
+"5",0.5,1549144.73647588,1549178.35217444,543197,543200,0.296830672063031,0.00515539464561108,"zkokugo_level ~ relative_age + I(relative_age^2)","rq_zkokugo_level_prime_0.5",NA
+"6",0.9,1860654.07407559,1860687.68977415,543197,543200,0.323743509853022,0.004214475575744,"zkokugo_level ~ relative_age + I(relative_age^2)","rq_zkokugo_level_prime_0.9",NA
+"7",0.1,1679723.50492475,1679757.12080004,543229,543232,0.273910526293558,0.00680610443100784,"zmath_level ~ relative_age + I(relative_age^2)","rq_zmath_level_prime_0.1",NA
+"8",0.5,1464425.20760265,1464458.82347795,543229,543232,0.258188239866269,0.00513324590786892,"zmath_level ~ relative_age + I(relative_age^2)","rq_zmath_level_prime_0.5",NA
+"9",0.9,1890967.13973986,1891000.75561515,543229,543232,0.352417184164319,0.00969471049865483,"zmath_level ~ relative_age + I(relative_age^2)","rq_zmath_level_prime_0.9",NA
+"10",0.1,1323506.99627165,1323539.49512708,374349,374352,0.162110468191763,0.0114271404725698,"zstrategy ~ relative_age + I(relative_age^2)","rq_zstrategy_prime_0.1",NA
+"11",0.5,1094764.9326861,1094797.43154153,374349,374352,0.142448842794764,0.00710053487280768,"zstrategy ~ relative_age + I(relative_age^2)","rq_zstrategy_prime_0.5",NA
+"12",0.9,1146148.83677758,1146181.33563301,374349,374352,0.0731573725331617,0.00501820629457982,"zstrategy ~ relative_age + I(relative_age^2)","rq_zstrategy_prime_0.9",NA
+"13",0.1,486014.771696273,486044.220924851,135454,135457,0.139583977987882,0.0177194073324521,"zselfcontrol ~ relative_age + I(relative_age^2)","rq_zselfcontrol_prime_0.1",NA
+"14",0.5,400930.673459119,400960.122687697,135454,135457,0.0812525419007105,0.00851783536707381,"zselfcontrol ~ relative_age + I(relative_age^2)","rq_zselfcontrol_prime_0.5",NA
+"15",0.9,373047.256170732,373076.70539931,135454,135457,0.017248201361094,0.000851779604580435,"zselfcontrol ~ relative_age + I(relative_age^2)","rq_zselfcontrol_prime_0.9",NA
+"16",0.1,309157.441848995,309185.630619419,88985,88988,0.153189241545896,0.0259064578101719,"zselfefficacy ~ relative_age + I(relative_age^2)","rq_zselfefficacy_prime_0.1",NA
+"17",0.5,261827.215557428,261855.404327853,88985,88988,0.168397714982938,0.0110625857954234,"zselfefficacy ~ relative_age + I(relative_age^2)","rq_zselfefficacy_prime_0.5",NA
+"18",0.9,280826.062871629,280854.251642053,88985,88988,0.145128581181453,0.00875292969230285,"zselfefficacy ~ relative_age + I(relative_age^2)","rq_zselfefficacy_prime_0.9",NA
+"19",0.1,162574.97890843,162601.123428136,45016,45019,0.119823752731652,0.0281243247884083,"zdilligence ~ relative_age + I(relative_age^2)","rq_zdilligence_prime_0.1",NA
+"20",0.5,130651.087571912,130677.232091617,45016,45019,2.65916094469242e-12,0.0933201654712217,"zdilligence ~ relative_age + I(relative_age^2)","rq_zdilligence_prime_0.5",NA
+"21",0.9,132354.595198938,132380.739718644,45016,45019,7.02188765331547e-13,0.15202808381074,"zdilligence ~ relative_age + I(relative_age^2)","rq_zdilligence_prime_0.9",NA
+"22",0.1,1532612.49835745,1532645.84858226,497194,497197,0.187490677252043,0.00726572140884826,"zgakuryoku ~ relative_age + I(relative_age^2)","rq_zgakuryoku_junior_0.1",NA
+"23",0.5,1343966.69491725,1344000.04514207,497194,497197,0.189254118438092,0.00506881793143389,"zgakuryoku ~ relative_age + I(relative_age^2)","rq_zgakuryoku_junior_0.5",NA
+"24",0.9,1601539.7233979,1601573.07362271,497194,497197,0.200482256097801,0.0068063875412424,"zgakuryoku ~ relative_age + I(relative_age^2)","rq_zgakuryoku_junior_0.9",NA
+"25",0.1,1656229.17811868,1656262.52883823,497276,497279,0.202063064791983,0.00857616192034834,"zkokugo_level ~ relative_age + I(relative_age^2)","rq_zkokugo_level_junior_0.1",NA
+"26",0.5,1446054.67099759,1446088.02171714,497276,497279,0.222464469981383,0.00607334174132812,"zkokugo_level ~ relative_age + I(relative_age^2)","rq_zkokugo_level_junior_0.5",NA
+"27",0.9,1669465.63675814,1669498.98747769,497276,497279,0.229702409106252,0.00370467234023074,"zkokugo_level ~ relative_age + I(relative_age^2)","rq_zkokugo_level_junior_0.9",NA
+"28",0.1,1575365.77246992,1575399.12353332,497333,497336,0.150655439488076,0.00749958861814839,"zmath_level ~ relative_age + I(relative_age^2)","rq_zmath_level_junior_0.1",NA
+"29",0.5,1395291.32110828,1395324.67217168,497333,497336,0.163885656396263,0.00529545789815419,"zmath_level ~ relative_age + I(relative_age^2)","rq_zmath_level_junior_0.5",NA
+"30",0.9,1723994.09506578,1724027.44612918,497333,497336,0.202224839760096,0.00761204526167861,"zmath_level ~ relative_age + I(relative_age^2)","rq_zmath_level_junior_0.9",NA
+"31",0.1,943611.12793727,943643.147716707,319097,319100,0.0984044183737282,0.00901959793722226,"zeng_level ~ relative_age + I(relative_age^2)","rq_zeng_level_junior_0.1",NA
+"32",0.5,904535.515687175,904567.535466612,319097,319100,0.133425291546304,0.00694929883760035,"zeng_level ~ relative_age + I(relative_age^2)","rq_zeng_level_junior_0.5",NA
+"33",0.9,1145286.09919424,1145318.11897367,319097,319100,0.0457455020078196,0.00511023987228474,"zeng_level ~ relative_age + I(relative_age^2)","rq_zeng_level_junior_0.9",NA
+"34",0.1,1379239.80847661,1379272.38925865,384713,384716,0.13887475475192,0.00959667972969459,"zstrategy ~ relative_age + I(relative_age^2)","rq_zstrategy_junior_0.1",NA
+"35",0.5,1108969.45396012,1109002.03474215,384713,384716,0.106475582318815,0.00657219478273424,"zstrategy ~ relative_age + I(relative_age^2)","rq_zstrategy_junior_0.5",NA
+"36",0.9,1177650.41566299,1177682.99644503,384713,384716,0.0420364464174956,0.00556061398525516,"zstrategy ~ relative_age + I(relative_age^2)","rq_zstrategy_junior_0.9",NA
+"37",0.1,469331.290707504,469360.715005713,134333,134336,0.0237925403409124,0.00628511833668429,"zselfcontrol ~ relative_age + I(relative_age^2)","rq_zselfcontrol_junior_0.1",NA
+"38",0.5,400812.322881081,400841.74717929,134333,134336,0.0191115221518064,0.0037362986254844,"zselfcontrol ~ relative_age + I(relative_age^2)","rq_zselfcontrol_junior_0.5",NA
+"39",0.9,395626.759805906,395656.184104116,134333,134336,0.016928393478053,0.00304022270219356,"zselfcontrol ~ relative_age + I(relative_age^2)","rq_zselfcontrol_junior_0.9",NA
+"40",0.1,450732.439717779,450761.843579698,133421,133424,0.166457699159056,0.0201373294507347,"zselfefficacy ~ relative_age + I(relative_age^2)","rq_zselfefficacy_junior_0.1",NA
+"41",0.5,390310.43090746,390339.834769379,133421,133424,0.144395083088119,0.00455187536190776,"zselfefficacy ~ relative_age + I(relative_age^2)","rq_zselfefficacy_junior_0.5",NA
+"42",0.9,444205.183132024,444234.586993943,133421,133424,0.130377403121376,0.00699063649463064,"zselfefficacy ~ relative_age + I(relative_age^2)","rq_zselfefficacy_junior_0.9",NA
+"43",0.1,476341.686995768,476371.079052502,132897,132900,0.0810255896708424,0.0157376427899842,"zdilligence ~ relative_age + I(relative_age^2)","rq_zdilligence_junior_0.1",NA
+"44",0.5,385074.785130746,385104.17718748,132897,132900,0.0288002038631064,0.00687510775892851,"zdilligence ~ relative_age + I(relative_age^2)","rq_zdilligence_junior_0.5",NA
+"45",0.9,399425.061057021,399454.453113755,132897,132900,0.0489772263156386,0.010500357394382,"zdilligence ~ relative_age + I(relative_age^2)","rq_zdilligence_junior_0.9",NA
+"46",0.1,1643291.60907446,1643325.22454658,543156,NA,NA,NA,"zgakuryoku ~ relative_age + I(relative_age^2)","rqboot_zgakuryoku_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"47",0.5,1429150.56741771,1429184.18288983,543156,NA,NA,NA,"zgakuryoku ~ relative_age + I(relative_age^2)","rqboot_zgakuryoku_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"48",0.9,1774542.06369095,1774575.67916307,543156,NA,NA,NA,"zgakuryoku ~ relative_age + I(relative_age^2)","rqboot_zgakuryoku_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"49",0.1,1767769.77455548,1767803.39025405,543197,NA,NA,NA,"zkokugo_level ~ relative_age + I(relative_age^2)","rqboot_zkokugo_level_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"50",0.5,1549144.73647588,1549178.35217445,543197,NA,NA,NA,"zkokugo_level ~ relative_age + I(relative_age^2)","rqboot_zkokugo_level_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"51",0.9,1860654.07407559,1860687.68977415,543197,NA,NA,NA,"zkokugo_level ~ relative_age + I(relative_age^2)","rqboot_zkokugo_level_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"52",0.1,1679723.50492475,1679757.12080004,543229,NA,NA,NA,"zmath_level ~ relative_age + I(relative_age^2)","rqboot_zmath_level_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"53",0.5,1464425.20760272,1464458.82347801,543229,NA,NA,NA,"zmath_level ~ relative_age + I(relative_age^2)","rqboot_zmath_level_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"54",0.9,1890967.13973983,1891000.75561512,543229,NA,NA,NA,"zmath_level ~ relative_age + I(relative_age^2)","rqboot_zmath_level_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"55",0.1,1323506.99627164,1323539.49512707,374349,NA,NA,NA,"zstrategy ~ relative_age + I(relative_age^2)","rqboot_zstrategy_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"56",0.5,1094764.9326861,1094797.43154153,374349,NA,NA,NA,"zstrategy ~ relative_age + I(relative_age^2)","rqboot_zstrategy_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"57",0.9,1146148.83677762,1146181.33563305,374349,NA,NA,NA,"zstrategy ~ relative_age + I(relative_age^2)","rqboot_zstrategy_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"58",0.1,486014.771696648,486044.220925226,135454,NA,NA,NA,"zselfcontrol ~ relative_age + I(relative_age^2)","rqboot_zselfcontrol_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"59",0.5,400930.673459077,400960.122687654,135454,NA,NA,NA,"zselfcontrol ~ relative_age + I(relative_age^2)","rqboot_zselfcontrol_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"60",0.9,373047.256170747,373076.705399325,135454,NA,NA,NA,"zselfcontrol ~ relative_age + I(relative_age^2)","rqboot_zselfcontrol_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"61",0.1,309157.441849044,309185.630619468,88985,NA,NA,NA,"zselfefficacy ~ relative_age + I(relative_age^2)","rqboot_zselfefficacy_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"62",0.5,261827.215557428,261855.404327853,88985,NA,NA,NA,"zselfefficacy ~ relative_age + I(relative_age^2)","rqboot_zselfefficacy_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"63",0.9,280826.062871629,280854.251642053,88985,NA,NA,NA,"zselfefficacy ~ relative_age + I(relative_age^2)","rqboot_zselfefficacy_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"64",0.1,162574.978908427,162601.123428133,45016,NA,NA,NA,"zdilligence ~ relative_age + I(relative_age^2)","rqboot_zdilligence_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"65",0.5,130651.087571909,130677.232091615,45016,NA,NA,NA,"zdilligence ~ relative_age + I(relative_age^2)","rqboot_zdilligence_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"66",0.9,132354.59519915,132380.739718855,45016,NA,NA,NA,"zdilligence ~ relative_age + I(relative_age^2)","rqboot_zdilligence_prime","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"67",0.1,1532612.49835745,1532645.84858226,497194,NA,NA,NA,"zgakuryoku ~ relative_age + I(relative_age^2)","rqboot_zgakuryoku_junior","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"68",0.5,1343966.69491725,1344000.04514207,497194,NA,NA,NA,"zgakuryoku ~ relative_age + I(relative_age^2)","rqboot_zgakuryoku_junior","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"69",0.9,1601539.72339787,1601573.07362268,497194,NA,NA,NA,"zgakuryoku ~ relative_age + I(relative_age^2)","rqboot_zgakuryoku_junior","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"70",0.1,1575365.77247008,1575399.12353348,497333,NA,NA,NA,"zmath_level ~ relative_age + I(relative_age^2)","rqboot_zmath_level_junior","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"71",0.5,1395291.32110828,1395324.67217168,497333,NA,NA,NA,"zmath_level ~ relative_age + I(relative_age^2)","rqboot_zmath_level_junior","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"72",0.9,1723994.09506579,1724027.44612918,497333,NA,NA,NA,"zmath_level ~ relative_age + I(relative_age^2)","rqboot_zmath_level_junior","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"73",0.1,943611.127937265,943643.147716702,319097,NA,NA,NA,"zeng_level ~ relative_age + I(relative_age^2)","rqboot_zeng_level_junior","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"74",0.5,904535.515687176,904567.535466612,319097,NA,NA,NA,"zeng_level ~ relative_age + I(relative_age^2)","rqboot_zeng_level_junior","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"75",0.9,1145286.09919424,1145318.11897367,319097,NA,NA,NA,"zeng_level ~ relative_age + I(relative_age^2)","rqboot_zeng_level_junior","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"76",0.1,1379239.80847661,1379272.38925865,384713,NA,NA,NA,"zstrategy ~ relative_age + I(relative_age^2)","rqboot_zstrategy_junior","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"77",0.5,1108969.45396012,1109002.03474216,384713,NA,NA,NA,"zstrategy ~ relative_age + I(relative_age^2)","rqboot_zstrategy_junior","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"78",0.9,1177650.41566299,1177682.99644503,384713,NA,NA,NA,"zstrategy ~ relative_age + I(relative_age^2)","rqboot_zstrategy_junior","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"79",0.1,469331.290707502,469360.715005712,134333,NA,NA,NA,"zselfcontrol ~ relative_age + I(relative_age^2)","rqboot_zselfcontrol_junior","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"80",0.5,400812.322880832,400841.747179042,134333,NA,NA,NA,"zselfcontrol ~ relative_age + I(relative_age^2)","rqboot_zselfcontrol_junior","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"81",0.9,395626.7598059,395656.184104109,134333,NA,NA,NA,"zselfcontrol ~ relative_age + I(relative_age^2)","rqboot_zselfcontrol_junior","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"82",0.1,476341.686995791,476371.079052525,132897,NA,NA,NA,"zdilligence ~ relative_age + I(relative_age^2)","rqboot_zdilligence_junior","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"83",0.5,385074.785130845,385104.177187579,132897,NA,NA,NA,"zdilligence ~ relative_age + I(relative_age^2)","rqboot_zdilligence_junior","11 * relative_age  +  11 **2 * `I(relative_age^2)`"
+"84",0.9,399425.061057026,399454.45311376,132897,NA,NA,NA,"zdilligence ~ relative_age + I(relative_age^2)","rqboot_zdilligence_junior","11 * relative_age  +  11 **2 * `I(relative_age^2)`"

@@ -4,6 +4,7 @@
 .Ruserdata
 *.Rproj
 *.csv
+!result/*/*.csv
 
 # folder
 data/*.csv
