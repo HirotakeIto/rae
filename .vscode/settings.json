@@ -1,0 +1,11 @@
+{
+    "python.pythonPath": "/Users/hirotake_ito/Library/Caches/pypoetry/virtualenvs/rae-Z4oKu1da-py3.7/bin/python",
+    "python.terminal.launchArgs": [
+        "-m",
+        "IPython",
+        "--no-autoindent",
+    ],
+    "python.linting.mypyEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true
+}

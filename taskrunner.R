@@ -21,8 +21,9 @@ load_source = function(file, envir) {
 './task/t8.R' %>% load_source(file = ., envir = new.env()) %>% {.$main(save_folder_basis = path_result_folder)}
 './task/t14.R' %>% load_source(file = ., envir = new.env()) %>% {.$main(save_folder_basis = path_result_folder)}
 './task/t17.R' %>% load_source(file = ., envir = new.env()) %>% {.$main(save_folder_basis = path_result_folder)}  # TODO: fix
-'./task/t17.R' %>% load_source(file = ., envir = new.env()) %>% {.$main2(save_folder_basis = path_result_folder)}  # TODO: fix
 './task/t19.R' %>% load_source(file = ., envir = new.env()) %>% {.$main(save_folder_basis = path_result_folder)}
 './task/t22.R' %>% load_source(file = ., envir = new.env()) %>% {.$main(save_folder_basis = path_result_folder)}  # high cost
 './task/t24.R' %>% load_source(file = ., envir = new.env()) %>% {.$main(save_folder_basis = path_result_folder)}
 './task/t25.R' %>% load_source(file = ., envir = new.env()) %>% {.$main(save_folder_basis = path_result_folder)}
+'./task/t28.R' %>% load_source(file = ., envir = new.env()) %>% {.$main(save_folder_basis = path_result_folder)}
+

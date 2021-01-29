@@ -179,7 +179,7 @@ main = function(save_folder_basis) {
   # dfx = readr::read_csv("./notebooks/Yamaguchi/RAE/data/dataset1.csv", guess_max = 2000000)
   # dt_sample = data_download$usedata_extract(data_download$setup_data(dfx), flag_dryrun = 1)
   # grades = c(9); targets = c("zmath_level"); taus = c(0.9)
-  dt_sample = download_saitama(FALSE)
+  dt_sample = download_saitama(flag_dryrun = FALSE)
   # build analysis instance
   targets = c(
     c("zgakuryoku", "zkokugo_level", "zmath_level", "zeng_level", "zstrategy"),
@@ -223,7 +223,7 @@ main = function(save_folder_basis) {
   summary_glance = ana_envs %>%
     purrr::discard(~ .x$status != "analyzed") %>%
     purrr::map(
-      ~ .x$result$summary_glance %>% dplyr::mutate(name = .x$name())
+      ~ .x$result$summary_glance %>% dplyr::mutate(name = .x$name()) %>% dplyr::select(-logLik)
       ) %>%
     purrr::reduce(dplyr::bind_rows)
   summary_boot = ana_envs %>%
@@ -246,7 +246,5 @@ main = function(save_folder_basis) {
   write.csv(x = summary_glance, file = file.path(savefolder, "summary_glance.csv"))
   write.csv(x = summary_boot, file = file.path(savefolder, "summary_boot.csv"))
   write.csv(x = boot_item, file = file.path(savefolder, "boot_item.csv"))
-  # trash
-  purrr::map(ana_envs, ~.x$status)
-  purrr::map(ana_envs, ~.x$result$fm_use)
+
 }

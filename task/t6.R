@@ -29,7 +29,7 @@ get_formula_info_t6 = function(...) {
 
 
 main = function(save_folder_basis) {
-  dt_sample = download_saitama(flag_dryrun = TRUE)
+  dt_sample = download_saitama(flag_dryrun = FALSE)
   get_tibble_customed = function(dfx, ...) {
     tibble_for_ana = tibble::tribble()
     # tibble_for_ana  %<>% dplyr::bind_rows(get_tibble_by_wave(dfx = dfx) %>% .$tibble_for_ana)

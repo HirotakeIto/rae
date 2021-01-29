@@ -1,6 +1,6 @@
 | Table Num | Table Name | Code | File |
 | --- | ----------- | --- | ----------- 
-| Table 1 | Gaps in Parental Characteristics and Birth Outcomes Between April- and March-born Children | tab:reg_vital_stats | task/t25.R |
+| Table 1 | Gaps in Parental Characteristics and Birth Outcomes Between April- and March-born Children | tab:reg_vital_stats | task/t14.R |
 | Table 2 | Gaps in Family Background Between April- and March-born Students | task/t24.R |
 | Table 3 | Descriptive Statistics | tab:descriptive_stats | task/des.py |
 | Table 4 | Month-of-Birth Gaps in Test Scores | tab:reg_math | task/t8.R |
@@ -8,7 +8,6 @@
 | Table 6 | Month-of-Birth Effects on Human Capital Investment Outside of School | tab:reg_inputs | task/t8.R |
 | Table 7 | Month-of-Birth Effects of Relationships with Teachers and Peers | tab:reg_relationships | task/t8.R |
 | Table 8 | Difference Between the Province and Municipality | diff_bet_saitama_toda | task/t28.R |
-| Table 9 | Questionnaire on Noncognitive Ability | questionare | |
 | Table 9 | Questionnaire on Noncognitive Ability | questionare | |
 | Table 10 | Correlations of Cognitive and Non-Cognitive Skills | tab:corr_cog_noncog_short | task/t0.R |
 | Table 11 | Attrition Rate: March (Youngest) vs April (Oldest) | tab:attrition | task/t33.py |

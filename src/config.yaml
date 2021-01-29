@@ -1,0 +1,43 @@
+columns:
+  grade_col: "grade"
+  year_col: "year"
+  mst_id_col: "mst_id"
+  relative_age_col: "relative_age"
+  absolute_age_col: "absolute_age"
+  school_id_col: "school_id"
+path:
+  path_main: "./data/dataset1.csv"
+  path_toda: "./data//dataset1_toda.csv"
+  path_vital_stat: "./data/saitama_birth.csv"
+  path_vital_stat2: "./data/saitama_birth2.csv"
+  path_enter: "./data/student_enter.csv"
+  path_first_choice: "./data/student_first_choice.csv"
+  path_result_folder: "./result/"
+rename:
+  figure_outcome_age:
+    title:
+      kokugo_level: "Japanese"
+      math_level: "Math"
+      eng_level: "English"
+      dilligence_scaled: "Conscientiousness"
+      selfcontrol_scaled: "Self-control"
+      selfefficacy_scaled: "Self-efficacy"
+      studytime: "Weekly hours of studying outside school"
+      reading_time_in_a_weekdays: "Weekly hours of reading"
+      cram: "Prep school participation rate"
+      playing_sport: "Weekly hours of playing outside and sports"
+      lesson_time: "Weekly hours of arts, music, and sports"
+      smart_phone_gaming_tv_time: "Mobile phone, game, TV"
+      teacherrelation2_primitive: "Relationship with teachers"
+      friendrelation: "Relationship with peers"
+      publicassistance: "PublicAssistance"
+      zyuken: "First Choice"
+      shingaku: "Enter"
+    ylabel:
+      default: Score
+      custom:
+        studytime: Hours
+        reading_time_in_a_weekdays: Hours
+        cram: Rate
+        playing_sport: Hours
+        lesson_time: Hours

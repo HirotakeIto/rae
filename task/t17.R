@@ -33,7 +33,7 @@ setup_zscore = function(dt) {
   }
   return(
     dt %>%
-      do(dplyr::mutate(
+      dplyr::do(dplyr::mutate(
         .,
         gakuryoku_z = standarize_near_grade6(df1 = ., target = "gakuryoku"),
         math_level_z = standarize_near_grade6(df1 = ., target = "math_level"),
@@ -52,13 +52,9 @@ setup_zscore = function(dt) {
 
 
 get_data_seup = function() {
-  setwd(rprojroot::find_rstudio_root_file())
-  data_download = new.env();sys.source("./notebooks/Yamaguchi/RAE/src/data_download.R", envir = data_download)
-  data_all = data.table::fread("./notebooks/Yamaguchi/RAE/data/dataset1.csv") %>%
-    tibble::as_tibble() %>%
-    data_download$setup_data(.) %>%
-    data_download$usedata_extract(., flag_dryrun = 0)
+  data_all = download_saitama()
   df_use = data_all %>%
+    dplyr::filter(year %in% c(2016, 2017, 2018)) %>%
     setup_zscore %>%
     dplyr::mutate(
       grade_int = as.integer(as.numeric(as.character(grade))),
@@ -163,45 +159,8 @@ get_formula_info_for_estimated_effect_within = function() {
   return(fm_info)
 }
 
-main = function(save_folder_basis) {
-  savefolder = file.path(save_folder_basis, "t17")
+analysis_rdd = function(save_folder_basis) {
   df_use = get_data_seup()
-  ############################
-  # Method1: Calc From Estimated Coef
-  ############################
-  # fm_info_list = get_formula_info()
-  # summary_result = tibble::tribble()
-  # for (fm_info in fm_info_list) {
-  #   fm = fm_info$fm
-  #   name = fm_info$name
-  #   print(name)
-  #   df_est = get_lm_data(df_use, fm)
-  #   df_est_compare = df_est %>%
-  #     dplyr::distinct(grade_str, absolute_age, compare_pair2, birthApr, .keep_all = FALSE) %>%
-  #     na.omit %>%
-  #     dplyr::mutate(
-  #       from = birthApr,
-  #       pair = compare_pair2
-  #     ) %>%
-  #     dplyr::select(-birthApr, -compare_pair2)
-  #   out.i <- boot(data = df_est, statistic = difference, R = 300, fmx = fm, df_est_compare = df_est_compare)
-  #   result = broom::tidy(out.i) %>%
-  #     dplyr::mutate(
-  #       name = name
-  #     )
-  #   summary_result %<>% dplyr::bind_rows(result)
-  #   gc(reset = TRUE)
-  # }
-  # summary_result = summary_result %>%
-  #   dplyr::rename(
-  #     difference = statistic,
-  #   ) %>%
-  #   dplyr::select(-bias)
-  # dir.create(savefolder, recursive = TRUE)
-  # write.csv(x = summary_result, file = file.path(savefolder, "summary_tidy.csv"))
-  ############################
-  # Method2: Calc By RDD
-  ############################
   ## get effect between grade
   fm_info_list = get_formula_info_for_estimated_effect_between()
   tibble_for_ana = get_tibble_for_effect_between_grade(dfx = df_use)
@@ -258,13 +217,14 @@ main = function(save_folder_basis) {
     gc(reset = TRUE)
   }
   # save
+  savefolder = file.path(path_result_folder, "t17")
   dir.create(savefolder, recursive = TRUE)
   write.csv(x = summary_tidy, file = file.path(savefolder, "summary_tidy2.csv"))
   write.csv(x = summary_glance, file = file.path(savefolder, "summary_glance2.csv"))
 }
 
 
-main2 = function(save_folder_basis) {
+plot_rdd = function(save_folder_basis) {
   get_plot = function(
     lmobject, dfx.average, absolute_age_min, absolute_age_max, absolute_age_cutoff0,
     xlab = NULL, ylab = NULL
@@ -427,10 +387,16 @@ main2 = function(save_folder_basis) {
     }
     p_all = p_all +
       theme(plot.margin = unit(c(1, 1, 1, 1), "lines"))
-    savefolder = file.path(save_folder_basis, "fig", "rdd")
+    # save
+    savefolder = file.path(path_result_folder, "fig", "rdd")
     dir.create(savefolder, recursive = TRUE)
     save_path = file.path(savefolder, paste(filename, "mpg1.pdf", sep = "_"))
     ggsave(file = save_path, p_all, width = 3 * length(plot_info_list), height = 3 * length(subject_info_list), limitsize = FALSE)
     gc()
   }
+}
+
+main = function(save_folder_basis) {
+  analysis_rdd(save_folder_basis = save_folder_basis)
+  plot_rdd(save_folder_basis = save_folder_basis)
 }
