@@ -13,12 +13,12 @@
 | Table 11 | Attrition Rate: March (Youngest) vs April (Oldest) | tab:attrition | task/t33.py |
 | Table 12 | Proportions of March-born (Youngest) and April-born (Oldest) Students | tab:prop-march-april | task/t33.py |
 | Table 13 | Testing Whether the Distribution of Birth Month Significantly Change From One Grade to Another by Kolmogorov-Smirnov Test | tab:ks-test | task/t33.py |
-| Table 14 | Month-of-Birth Gaps in the Growth of Test Scores and Noncognitive Skills | tab:reg_growth | task/t8.R |
-| Table 15 | Month-of-Birth Effects on High School Quality | tab:hs-quality | task/t25.R |
-| Table 16 | eterogeneous Month-of-Birth Effects by Gender | tab:gender-reg | task/t3.R |
-| Table 17 |  Heterogeneous Month-of-Birth Effects by SES (No. of Books at Home) | tab:ses-reg | task/t3.R  |
-| Table 18 | Heterogeneous Month-of-Birth Effects by SES (Family Income) | tab:lowincome-reg | task/t19.R |
-| Table 19 | Month-of-Birth Effects for 10th, 50th, and 90th | tab:quantile-reg| task/t22.R |
-| Table 20 | 10th-50th and 50th-90th Percentile Gaps in Month-of-Birth Effects | tab:qreg-test | task/t22.R |
+| Table 16 | Month-of-Birth Gaps in the Growth of Test Scores and Noncognitive Skills | tab:reg_growth | task/t8.R |
+| Table 17 | Month-of-Birth Effects on High School Quality | tab:hs-quality | task/t25.R |
+| Table 18 | eterogeneous Month-of-Birth Effects by Gender | tab:gender-reg | task/t3.R |
+| Table 19 |  Heterogeneous Month-of-Birth Effects by SES (No. of Books at Home) | tab:ses-reg | task/t3.R  |
+| Table 20 | Heterogeneous Month-of-Birth Effects by SES (Family Income) | tab:lowincome-reg | task/t19.R |
+| Table 21 | Month-of-Birth Effects for 10th, 50th, and 90th | tab:quantile-reg| task/t22.R |
+| Table 22 | 10th-50th and 50th-90th Percentile Gaps in Month-of-Birth Effects | tab:qreg-test | task/t22.R |
 | Table 21 | Test Score Gaps Between Grades for Same Age | tab:rdd_cog | task/t17.R |
-| Table 22 | Regressions of Cognitive and Noncognitive Skills on Inputs and Personal Relationships | tab:reg_cog_noncog_on_inputs | task/t6.R |
+| Table 23 | Regressions of Cognitive and Noncognitive Skills on Inputs and Personal Relationships | tab:reg_cog_noncog_on_inputs | task/t6.R |
