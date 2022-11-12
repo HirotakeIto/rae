@@ -105,10 +105,10 @@ $ pyenv install
 これでうまくインストールできた。
 ```
 $ python
-Python 3.7.1 (default, Jan 29 2021, 07:14:41) 
+Python 3.7.1 (default, Jan 29 2021, 07:14:41)
 [GCC 7.5.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
->>> 
+>>>
 ```
 と正しくインストールできていることを確認できた。
 

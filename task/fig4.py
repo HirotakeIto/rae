@@ -77,14 +77,14 @@ def main():
         ax = axis[i // ncols, i % ncols]
         sns.pointplot(
             data=df,
-            x="birth_month", y=target,
+            x="relative_age", y=target,
             ci=None, alpha=.6, height=6, ax=ax
         )
         [spin.set_visible(False) for spin in list(ax.spines.values())]
         ax.set_ylabel(None)
         ax.set_xlabel("month of birth")
         ax.set_title(RENAME[target])
-        ax.axvline(2.5, color="grey")
+        # ax.axvline(2.5, color="grey")
     else:
         if i != ncols * nrows:
             for j in range(i + 1, ncols * nrows):
