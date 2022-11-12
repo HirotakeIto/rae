@@ -1,0 +1,4 @@
+"","r.squared","adj.r.squared","sigma","statistic","p.value","df","df.residual","obs","fm_use","name"
+"1",0.00704841600680588,0.00328519939178029,33.9854019362954,1.87297642624748,0.070131070543006,1847,1847,1855,"I(attendance * 100) ~ is_apirl + as.factor(year) + as.factor(grade) |      0 | 0 | 0","in_april_and_march_t36_basic_I(attendance*100)"
+"2",0.00313503856652428,-0.00064300947355922,21.039039212608,0.829803785781122,0.562414999868395,1847,1847,1855,"I(singleparent * 100) ~ is_apirl + as.factor(year) + as.factor(grade) |      0 | 0 | 0","in_april_and_march_t36_basic_I(singleparent*100)"
+"3",0.00981211100255741,0.0060593685970447,7.65649849208853,2.61465081859694,0.0109448910161452,1847,1847,1855,"I(publicassistance * 100) ~ is_apirl + as.factor(year) + as.factor(grade) |      0 | 0 | 0","in_april_and_march_t36_basic_I(publicassistance*100)"
