@@ -69,7 +69,7 @@ def main():
             job3_job4_100=lambda dfx: dfx["job3_100"] + dfx["job4_100"],
         )
     )
-    df.groupby("relative_age")[TARGETS].mean().to_csv("tmp.csv")
+    df.groupby("birth_month")[TARGETS].mean().to_csv("tmp.csv")
     ncols = 3
     nrows = len(TARGETS)//3 + 1 if len(TARGETS) % 3 != 0 else len(TARGETS)//3
     fig, axis = plt.subplots(nrows=nrows, ncols=ncols, figsize=(ncols*4, nrows*2.8), sharex=False, sharey=False)
@@ -77,12 +77,12 @@ def main():
         ax = axis[i // ncols, i % ncols]
         sns.pointplot(
             data=df,
-            x="relative_age", y=target,
+            x="birth_month", y=target,
             ci=None, alpha=.6, height=6, ax=ax
         )
         [spin.set_visible(False) for spin in list(ax.spines.values())]
         ax.set_ylabel(None)
-        ax.set_xlabel("month of birth")
+        ax.set_xlabel("Month of Birth")
         ax.set_title(RENAME[target])
         # ax.axvline(2.5, color="grey")
     else:

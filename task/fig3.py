@@ -11,7 +11,7 @@ PATH_RESULT_FOLDER = setting.path.path_result_folder
 DIR_SAVE = os.path.join(PATH_RESULT_FOLDER, "fig", "absolute_age_score")
 COLS_SUBJECT = ["shingaku", "zyuken"]
 MAPPER_TITLE = setting.rename.figure_outcome_age.title
-XLABEL = "Age (month of birth)"
+XLABEL = "Month of Birth"
 YLABEL = "High school quality"
 
 

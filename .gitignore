@@ -4,6 +4,7 @@
 .Ruserdata
 *.Rproj
 *.csv
+*.pyc
 !result/*/*.csv
 
 # folder
