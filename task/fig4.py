@@ -69,7 +69,7 @@ def main():
             job3_job4_100=lambda dfx: dfx["job3_100"] + dfx["job4_100"],
         )
     )
-    df.groupby("birth_month")[TARGETS].mean().to_csv("tmp.csv")
+    df.groupby("relative_age")[TARGETS].mean().to_csv("tmp.csv")
     ncols = 3
     nrows = len(TARGETS)//3 + 1 if len(TARGETS) % 3 != 0 else len(TARGETS)//3
     fig, axis = plt.subplots(nrows=nrows, ncols=ncols, figsize=(ncols*4, nrows*2.8), sharex=False, sharey=False)
@@ -77,9 +77,11 @@ def main():
         ax = axis[i // ncols, i % ncols]
         sns.pointplot(
             data=df,
-            x="birth_month", y=target,
+            x="relative_age", y=target,
             ci=None, alpha=.6, height=6, ax=ax
         )
+        # xticklabel_mapping = df[['relative_age', 'birth_month']].set_index('relative_age')['birth_month'].drop_duplicates().to_dict()
+        ax.set_xticklabels([3, 2, 1, 12, 11, 10, 9, 8, 7, 6, 5, 4])
         [spin.set_visible(False) for spin in list(ax.spines.values())]
         ax.set_ylabel(None)
         ax.set_xlabel("Month of Birth")
