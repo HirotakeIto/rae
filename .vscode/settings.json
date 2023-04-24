@@ -7,5 +7,7 @@
     ],
     "python.linting.mypyEnabled": false,
     "python.linting.flake8Enabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "editor.trimAutoWhitespace": false,
+    "diffEditor.ignoreTrimWhitespace": false
 }

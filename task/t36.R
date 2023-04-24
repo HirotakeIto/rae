@@ -32,7 +32,7 @@ AnalysisEnvironmentT23 <- R6::R6Class(
     sampling_in_april_and_march = function(dfx) {
       print(paste("sampling grade:", self$grade))
       return(
-        dfx %>% 
+        dfx %>%
           dplyr::filter(!!sym(relative_age_col) %in% c(0, 11)) %>%
           dplyr::mutate(
             is_apirl = dplyr::case_when(!!sym(relative_age_col)==11~1, !!sym(relative_age_col)==0~0, TRUE~NaN)
@@ -48,8 +48,8 @@ AnalysisEnvironmentT23 <- R6::R6Class(
       # browser()
       return(
         parametric_regression_felm(
-          dfx = self$sampling(dfx = dfx), 
-          fm = self$get_fm(), 
+          dfx = self$sampling(dfx = dfx),
+          fm = self$get_fm(),
           choices_1level_factor = self$choices_1level_factor
         )
       )
@@ -72,7 +72,7 @@ AnalysisEnvironmentT23 <- R6::R6Class(
 
 
 main = function(save_folder_basis) {
-  dt_sample = download_toda()
+  df = download_toda()
   # analysis setup
   targets = c(
     c("I(attendance*100)", "I(singleparent*100)", "I(publicassistance*100)")
@@ -80,7 +80,7 @@ main = function(save_folder_basis) {
   ana_envs = c()
   # target = "zkokugo_level"; type_formula = "basic"; type_sampling = "in_april_and_march_by_grade"; grade = 9  # for debug
   for (target in targets) {
-    for (type_formula in c("basic")) { 
+    for (type_formula in c("basic")) {
       for (type_sampling in c("in_april_and_march")) {
         ana_env = AnalysisEnvironmentT23$new(
           target = target, type_formula = type_formula, type_sampling = type_sampling,
