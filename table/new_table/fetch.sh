@@ -1,0 +1,1 @@
+find result -type f \( -iname "*.tex" -o -iname "*.png" \) -exec cp {} table/new_table/ \;
