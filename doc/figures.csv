@@ -1,0 +1,31 @@
+﻿ Figure Num , Figure Name , Code , File ,Footnote
+ Figure 1 , Relative Frequency of Birth Month (Adjusted for Number of Days) ,fig:distribution_birth_month, ./task/kstest.py ,"Source: Vital Statistics from April 2000 to March 2011.
+
+Note: The relative frequency of birth months is shown. We adjust for differences in the number of days across months as follows; we divide the unadjusted relative frequency by the number of days in the month and then multiply this by 30. The horizontal bar is drawn at 8.3\%, which is the relative frequency of a birth month under the assumption that births are completely random. April-born children are the oldest, while March-born children are the youngest in a given grade."
+ Figure 2,The Survey Structure for Noncognitive Skills,fig:survey_str_noncog,,"    Note: The figure illustrates the structure of the survey for noncognitive skills. Only one noncognitive skill is measured for each birth cohort. Consider the cohort who was grade four in 2016 (born in 2006/2007). The school board measured their self-control from 2016 to 2018, but not other noncognitive skills."
+ Figure 3 , Mean Test Scores by Age , fig:math , ./task/fig2.py,"    Source: Saitama Skill Assessment 2015-2018.
+    
+    Note: The figure shows the age-profiles for math, Japanese, and English test scores. Math and Japanese test scores are standardized so that the mean and standard deviation are 0 and 1 for sixth graders in 2015. English test scores are standardized similarly for eighth graders in 2015. Each dot represents an average of about 50,000 children.  In the Japanese educational system, the youngest students in each grade are born in March and the oldest in April. Therefore, the first (leftmost) dot in this figure is the child born in March, and the last (rightmost) dot is the child born in April. "
+ Figure 4 , Noncognitive Skills by Age , fig:non-cog , ./task/fig2.py,"    Source: Saitama Skill Assessment 2016-2018.
+    
+    Note: The figure shows the age-profiles for noncognitive skills. Raw scores are reported. Each dot represents an average of about 50,000 children.  In the Japanese educational system, the youngest students in each grade are born in March and the oldest in April. Therefore, the first (leftmost) dot in this figure is the child born in March, and the last (rightmost) dot is the child born in April. "
+ Figure 5 ,Average High School Quality by Month of Birth,fig:hs-quality, ./task/fig3.py,"    Source: Administrative data in 2017 from a municipality in the province.
+        
+    Note: The figure shows the relationship between the month of birth and the quality of high school. High school quality is standardized so that the mean is 50 and the standard deviation is 10. The number of observations is 937."
+ Figure 6 , Human Capital Investment Outside of School (1) , fig:inputs1 , ./task/fig2.py,"    Source: Saitama Skill Assessment 2015-2018.
+    
+    Note: The figure shows the age-profiles for human capital investment out of school. Hours of studying and prep school participation rates are available for 2015-2018. Hours of reading are available for 2015 only. Each dot represents an average of about 50,000 children.  In the Japanese educational system, the youngest students in each grade are born in March and the oldest in April. Therefore, the first (leftmost) dot in this figure is the child born in March, and the last (rightmost) dot is the child born in April. "
+ Figure 7 , Human Capital Investment Outside of School (2) , fig:inputs2 , ./task/fig2.py,"    Source: Saitama Skill Assessment 2015.
+
+    Note: The figure shows the age-profiles for human capital investment out of school. Hours of playing sports and/or outside and hours of art, music, and sports are available for 2015 only. Each dot represents an average of about 50,000 children.  In the Japanese educational system, the youngest students in each grade are born in March and the oldest in April. Therefore, the first (leftmost) dot in this figure is the child born in March, and the last (rightmost) dot is the child born in April. "
+ Figure 8, Quality of Relationships with Teachers and Peers , fig:relationships , ./task/fig2.py,"    Source: Saitama Skill Assessment 2016-2018.
+    
+    Note: The figure shows the age-profiles for the quality of interpersonal relationships. Raw scores are reported. Relationship with teachers is available for 2017-2018, while that for peers is available for 2016-2018. Each dot represents an average of about 50,000 children.  In the Japanese educational system, the youngest students in each grade are born in March and the oldest in April. Therefore, the first (leftmost) dot in this figure is the child born in March, and the last (rightmost) dot is the child born in April. "
+ Figure 9 , Quality of Relationships with Teachers and Peers , fig:relationships , ./task/fig2.py,"    Source: Vital Statistics from April 2000 to March 2011.
+    
+    Note: The figure shows parental characteristics and birth outcomes by birth month. All points represent the mean values."
+ Figure 10,Test Score Gaps Between Grades for the Same Age,fig:rdd_cog, ./task/t17.R,"    Source: Saitama Skill Assessment 2015-2018.
+    
+    Note: This figure graphically illustrates the estimated test score gaps between two adjacent grades for students of the same age. Each dot represents the average test score for a specific age, and the line indicates the estimated test scores based on equation (\ref{eqn:RDD}). The red line represents students in younger grades who are the same age, while the blue line represents students in older grades."
+,,,,
+  ,  ,  ,,

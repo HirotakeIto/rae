@@ -7,6 +7,7 @@
 *.pyc
 !result/*/*.csv
 !doc/tables.csv
+!doc/figures.csv
 
 # folder
 data/*.csv
